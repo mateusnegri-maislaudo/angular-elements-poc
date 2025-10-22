@@ -1,0 +1,27 @@
+<!-- O conteúdo do _Layout.cshtml é movido para cá -->
+<div class="app-container navbar-top">
+    <div class="navbar-brand">
+            <svg class="brand-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#43d9ad"/>
+                <text x="50" y="65" font-size="50" fill="white" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold">ML</text>
+            </svg>
+            <span class="brand-text">maislaudo <span class="telemed">telemedicina</span></span>
+        </div>
+
+        <nav class="main-nav">
+            <ul class="nav-menu">
+                <li><a href="/tecnico/dashboard" routerLinkActive="active-link" class="nav-link"><i class="fas fa-chart-pie"></i> Painel</a></li>
+                <li><a href="/Exame/TodosExames" routerLinkActive="active-link" class="nav-link"><i class="fas fa-file-medical-alt"></i> Exames</a></li>
+                <li><a href="/Usuario/GerenciaDeUsuarios" routerLinkActive="active-link" class="nav-link"><i class="fas fa-users-cog"></i> Usuários</a></li>
+                <li><a href="/Integracao" routerLinkActive="active-link" class="nav-link"><i class="fa-solid fa-link"></i> Integrações</a></li>
+                <li><a href="/empresa/empresas" routerLinkActive="active-link" class="nav-link"><i class="fa-solid fa-handshake"></i> Convênios</a></li>
+                <li><a href="/Pacientes" routerLinkActive="active-link" class="nav-link"><i class="fa-person fa-"></i> Pacientes</a></li>
+            </ul>
+        </nav>
+
+        <div class="navbar-menu">
+            <a href="#" class="nav-icon"><i class="fa-solid fa-bell"></i></a>
+            <span class="user-info">{{ usuario }}</span>
+            <span class="user-avatar">{{ sigla }}</span>
+        </div>
+</div>  

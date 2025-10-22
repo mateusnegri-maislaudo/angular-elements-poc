@@ -1,12 +1,12 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, Injector } from '@angular/core';
+import { MenuHeader } from './menu-header/menu-header';
+import { createCustomElement } from '@angular/elements';
 
 @Component({
+  standalone: true,
+  imports: [MenuHeader],
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.scss'
+  template: `<app-menu-header></app-menu-header>`,
+  styleUrls: ['./app.scss']
 })
-export class App {
-  protected readonly title = signal('angular-elements-poc');
-}
+export class App {}

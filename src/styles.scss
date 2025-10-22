@@ -1,1 +1,107 @@
 /* You can add global styles to this file, and also import other style files */
+/* Reset para remover bullets e margens */
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Estilos básicos da navbar */
+.navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.brand-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.telemed {
+    font-weight: normal;
+    color: #555;
+}
+
+.main-nav {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background-color: #f0f0f0;
+}
+
+.nav-link i {
+    font-size: 1rem;
+}
+
+/* Estilo para o link ativo, via routerLinkActive */
+.nav-link.active-link {
+    background-color: #43d9ad;
+    color: white;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-icon i {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.user-info {
+    font-weight: 500;
+}
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    background-color: #43d9ad;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.main-content-wrapper {
+    padding: 0;
+}
+
+.page-content {
+    padding: 2rem;
+    background-color: #f4f7f6;
+    min-height: calc(100vh - 75px); /* Altura da tela menos a altura do navbar */
+}
